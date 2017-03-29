@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>whiskey - Etsy</title>
-	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="styles.css" />
 	<script src="https://use.fontawesome.com/77300a2c04.js"></script>
 </head>
 <body>
@@ -17,7 +17,7 @@
 			</div>
 			<div id="searchBar">
 				
-				<input type="text" name="searchInput" placeholder="Search for items of shops" value="whiskey">
+				<input id="searchInput" type="text" name="searchInput" placeholder="Search for items of shops" value="whiskey">
 				<button type="button">Search</button>
 
 			</div>
@@ -574,103 +574,147 @@
 				
 				</form>
 
-
-<!--
-				<div id="itemPrice">
-
-				</div>
-
-				<div id="colorFilter">
-
-				</div>
-
-				<div id="orderingOptions">
-
-				</div>
-
-				<div id="shipTo">
-
-				</div>
+			</div>
 
 
-			</form>
 
 
-		</div>
-
-		<div id="searchResults">
-
-			<section id="topCategories">
-
-				<ul>
-
-					<li id="category1">
-						<div class="categoryTag">
-							<p class="catTitle"></p>
-							<p class="catNumItems"></p>
-						</div>
-					</li>
-
-					<li id="category2">
-						<div class="categoryTag">
-							<p class="catTitle"></p>
-							<p class="catNumItems"></p>
-						</div>
-					</li>
-
-					<li id="category3">
-						<div class="categoryTag">
-							<p class="catTitle"></p>
-							<p class="catNumItems"></p>
-						</div>
-					</li>
-
-					<li id="category4">
-						<div class="categoryTag">
-							<p class="catTitle"></p>
-							<p class="catNumItems"></p>
-						</div>
-					</li>
-
-					<li id="category5">
-						<div class="categoryTag">
-							<p class="catTitle"></p>
-							<p class="catNumItems"></p>
-						</div>
-					</li>
-
-					<li id="category6">
-						<div class="categoryTag">
-							<p class="catTitle"></p>
-							<p class="catNumItems"></p>
-						</div>
-					</li>
-
-					<li id="category7">
-						<div class="categoryTag">
-							<p class="catTitle"></p>
-							<p class="catNumItems"></p>
-						</div>
-					</li>
 
 
-				</ul>
+				<div id="resultsArea">
 
-		</div>
+					<section id="topCategories">
+
+						<p id="topCategoriesHeader">Top categories for "whiskey"</p>
+
+						<div id="topCatResults">
+
+							<ul id="topCatTopRow">
+								<li id="topCat1">
+									
+									<div id="topRowImage1"></div>
+
+									<div class="thumbnailInfo">
+										<div class="thumbnailTitle">Home & Living</div>
+										<div class="thumbnailNumItems">19,606 Items</div>
+									</div>
+
+								</li>
+								<li id="topCat2">
+
+									<div id="topRowImage2"></div>
+
+									<div class="thumbnailInfo">
+										<p class="thumbnailTitle">Art & Collectibles</p>
+										<p class="thumbnailNumItems">6,405 Items</p>
+									</div>
+
+								</li>
+								<li id="topCat3">
+									
+									<div id="topRowImage3"></div>
 		
+									<div class="thumbnailInfo">
+										<p class="thumbnailTitle">Weddings</p>
+										<p class="thumbnailNumItems">5,082 Items</p>
+									</div>
+								</li>
+							</ul>
 
-		<div id=results></div>
+							<ul id="topCatBottomRow">
+								<li id="topCat4">
+									
+									<div class="bottomRowImage"></div>
 
-		<div id=relatedSearches></div>
+									<div class="thumbnailInfo">
+										<p class="thumbnailTitle">Clothing</p>
+										<p class="thumbnailNumItems">2,989 Items</p>
+									</div>
 
-	</div>
+								</li>
+								<li id="topCat5">
+									
+									<div class="bottomRowImage"></div>
+
+									<div class="thumbnailInfo">
+										<p class="thumbnailTitle">Paper & Party Supplies</p>
+										<p class="thumbnailNumItems">1,711 Items</p>
+									</div>
+
+								</li>
+								<li id="topCat6">
+									
+									<div class="bottomRowImage"></div>
+
+									<div class="thumbnailInfo">
+										<p class="thumbnailTitle">Jewelry</p>
+										<p class="thumbnailNumItems">1,483 Items</p>
+									</div>
+
+								</li>
+								<li id="topCat7">
+									
+									<div class="bottomRowImage"></div>
+
+									<div class="thumbnailInfo">
+										<p class="thumbnailTitle">Accessories</p>
+										<p class="thumbnailNumItems">1,349 Items</p>
+									</div>
+
+								</li>
+							</ul>
+
+						</div>
+
+						<div class="resultsSpaceLine"></div>
+
+					</section>
 
 
+				
 
 
+					<section id="searchResults">
+						
+						<div id="searchResultsHeader">
+							<div id="category">
+								<p id="witchCategories">All categories</p>
+								<i id="categoryArrow" class="fa fa-chevron-right" aria-hidden="true"></i>
+								<p id="userSearch"></p>
+								<p id="numResults"></p>
+							</div>
+						</div>
+
+						<div id="results">
+							<ul id="resultsList">
+
+							</ul>
+						</div>
+
+					</section>
 
 
- -->
+				</div>
+		</div>
+
+		<div id="footerArea">
+					<div id="emailReg">
+						<p id="emailRegText">Get top trends and fresh editors' picks in your inbox with Etsy Finds</p>
+
+						<form>
+							<input type="email" placeholder="Enter your email">
+							<button id="emailRegSubmit" type="button">Subscribe</button>
+						</form>
+
+					</div>
+				</div>
+
+
+		<script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+		<script src="main.js"></script>
 
 
 </body>
